@@ -1,0 +1,58 @@
+export const DEFAULT_QUOTE_INPUTS = {
+  customerName: "",
+  state: "Ohio",
+  projectType: "Freestanding Catio",
+  needsRoof: true,
+  lengthFeet: 10,
+  widthFeet: 10,
+  heightFeet: 8,
+  tunnelFeet: 0,
+  includedShelves: 10,
+  carpenterCount: 2,
+  squareFeetPerDay: 12,
+  laborHoursPerBuildDay: 5,
+  dayBreaks: 1,
+  travelDays: 2,
+  contractorHourlyRate: 120.66672,
+  materialCostPerSquareFoot: 50,
+  profitMarkupPercent: 0.38,
+  contractorDepositPercent: 0.2,
+  contractorBidPercent: 0.5,
+  contractorProfitPercent: 0.15,
+  selectedUpgradeIds: ["catio-trex-decking"],
+  selectedTunnelUpgradeIds: [],
+};
+
+export const FIXED_JOB_COSTS = [
+  { id: "flights", label: "Flights", amount: 512.96 },
+  { id: "rental-truck", label: "Rental truck", amount: 774.36 },
+  { id: "luggage", label: "Luggage", amount: 0 },
+  { id: "gas", label: "Gas", amount: 163.18 },
+  { id: "food", label: "Food", amount: 324.93 },
+  { id: "hotel", label: "Hotel", amount: 2246.89 },
+  { id: "dump", label: "Dump", amount: 0 },
+  { id: "project-manager", label: "Project manager", amount: 525 },
+  { id: "catio-designer", label: "Catio designer", amount: 850 },
+  { id: "short-term-debt", label: "Short-term debt", amount: 0 },
+  { id: "seo", label: "Search engine optimization", amount: 5 },
+  {
+    id: "mailchimp-google-business",
+    label: "Mailchimp and Google Business Manager",
+    amount: 3,
+  },
+  { id: "website-services", label: "Website services", amount: 40.01 },
+  { id: "marketing", label: "Marketing", amount: 218.9 },
+  { id: "offsite-tool-storage", label: "Offsite tool storage", amount: 701.13 },
+  { id: "new-tools", label: "New tools", amount: 19.48 },
+  { id: "unemployment-insurance", label: "Unemployment insurance", amount: 351.34 },
+  {
+    id: "workers-comp-business-insurance",
+    label: "Workers comp and business insurance",
+    amount: 31.35,
+  },
+];
+
+export const PROJECT_TYPE_OPTIONS = [
+  "Freestanding Catio",
+  "Enclosed Pre-existing Porch",
+];
