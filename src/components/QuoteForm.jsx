@@ -1,4 +1,8 @@
-import { PROJECT_TYPE_OPTIONS } from "../data/defaults.js";
+import {
+  PROJECT_COMPLEXITY_OPTIONS,
+  STATE_OPTIONS,
+} from "../data/defaults.js";
+import { formatCurrency } from "../lib/quoteCalculator.js";
 
 function NumberField({
   displayDecimals,
@@ -29,7 +33,14 @@ function NumberField({
   );
 }
 
-export default function QuoteForm({ inputs, onChange }) {
+const localPricingStatusLabels = {
+  checking: "Checking",
+  error: "Check failed",
+  idle: "Ready",
+  updated: "Updated",
+};
+
+export default function QuoteForm({ inputs, localPricingStatus, onChange, quote }) {
   return (
     <section className="panel quote-form">
       <div className="panel-heading">
@@ -37,53 +48,66 @@ export default function QuoteForm({ inputs, onChange }) {
           <p className="eyebrow">Project</p>
           <h2>Quote Inputs</h2>
         </div>
+        <span className="count-pill">
+          {localPricingStatusLabels[localPricingStatus] ?? "Ready"}
+        </span>
       </div>
 
       <div className="field-grid">
         <label className="field">
-          <span>Customer</span>
-          <input
-            name="customerName"
-            onChange={(event) => onChange("customerName", event.target.value)}
-            type="text"
-            value={inputs.customerName}
-          />
-        </label>
-
-        <label className="field">
           <span>State</span>
-          <input
+          <select
             name="state"
             onChange={(event) => onChange("state", event.target.value)}
-            type="text"
             value={inputs.state}
-          />
-        </label>
-
-        <label className="field">
-          <span>Build type</span>
-          <select
-            name="projectType"
-            onChange={(event) => onChange("projectType", event.target.value)}
-            value={inputs.projectType}
           >
-            {PROJECT_TYPE_OPTIONS.map((option) => (
-              <option key={option} value={option}>
-                {option}
+            {STATE_OPTIONS.map((state) => (
+              <option key={state.value} value={state.value}>
+                {state.label}
               </option>
             ))}
           </select>
         </label>
 
         <label className="field">
-          <span>Roof</span>
+          <span>ZIP code</span>
+          <input
+            inputMode="numeric"
+            maxLength="5"
+            name="zipCode"
+            onChange={(event) => onChange("zipCode", event.target.value)}
+            pattern="[0-9]{5}"
+            type="text"
+            value={inputs.zipCode}
+          />
+        </label>
+
+        <label className="field">
+          <span>Complexity</span>
           <select
-            name="needsRoof"
-            onChange={(event) => onChange("needsRoof", event.target.value === "true")}
-            value={String(inputs.needsRoof)}
+            name="complexityLevel"
+            onChange={(event) => onChange("complexityLevel", event.target.value)}
+            value={inputs.complexityLevel}
           >
-            <option value="true">Yes</option>
+            {PROJECT_COMPLEXITY_OPTIONS.map((option) => (
+              <option key={option.id} value={option.id}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="field">
+          <span>Deck base</span>
+          <select
+            name="includeDeckBase"
+            onChange={(event) =>
+              onChange("includeDeckBase", event.target.value === "true")
+            }
+            value={String(inputs.includeDeckBase)}
+          >
             <option value="false">No</option>
+            <option value="true">Yes</option>
           </select>
         </label>
       </div>
@@ -103,66 +127,93 @@ export default function QuoteForm({ inputs, onChange }) {
           step="0.25"
           value={inputs.widthFeet}
         />
+      </div>
+
+      <div className="field-grid compact">
         <NumberField
-          label="Height"
-          name="heightFeet"
+          label="Pressure treated $/bf"
+          name="pressureTreatedLumberPricePerBoardFoot"
           onChange={onChange}
-          step="0.25"
-          value={inputs.heightFeet}
+          step="0.01"
+          value={inputs.pressureTreatedLumberPricePerBoardFoot}
         />
         <NumberField
-          label="Tunnel feet"
-          name="tunnelFeet"
+          label="Cedar $/bf"
+          name="cedarLumberPricePerBoardFoot"
           onChange={onChange}
-          step="0.25"
-          value={inputs.tunnelFeet}
+          step="0.01"
+          value={inputs.cedarLumberPricePerBoardFoot}
         />
         <NumberField
-          label="Shelves included"
-          name="includedShelves"
+          label="Redwood $/bf"
+          name="redwoodLumberPricePerBoardFoot"
           onChange={onChange}
-          step="1"
-          value={inputs.includedShelves}
+          step="0.01"
+          value={inputs.redwoodLumberPricePerBoardFoot}
         />
         <NumberField
-          label="Carpenters"
-          name="carpenterCount"
+          label="Futures $/mbf"
+          name="lumberFuturesPricePerThousandBoardFeet"
           onChange={onChange}
-          step="1"
-          value={inputs.carpenterCount}
+          step="0.01"
+          value={inputs.lumberFuturesPricePerThousandBoardFeet}
+        />
+        <NumberField
+          label="Baseline $/mbf"
+          name="baselineLumberFuturesPricePerThousandBoardFeet"
+          onChange={onChange}
+          step="0.01"
+          value={inputs.baselineLumberFuturesPricePerThousandBoardFeet}
+        />
+        <NumberField
+          label="Futures blend"
+          name="lumberFuturesBlendPercent"
+          onChange={onChange}
+          step="0.01"
+          value={inputs.lumberFuturesBlendPercent}
+        />
+        <NumberField
+          label="Waste"
+          name="materialWastePercent"
+          onChange={onChange}
+          step="0.01"
+          value={inputs.materialWastePercent}
         />
       </div>
 
       <div className="field-grid compact">
         <NumberField
-          label="Sq ft per day"
-          name="squareFeetPerDay"
-          onChange={onChange}
-          step="0.25"
-          value={inputs.squareFeetPerDay}
-        />
-        <NumberField
-          label="Labor hours/day"
-          name="laborHoursPerBuildDay"
-          onChange={onChange}
-          step="0.25"
-          value={inputs.laborHoursPerBuildDay}
-        />
-        <NumberField
-          displayDecimals={2}
-          label="Hourly rate"
-          name="contractorHourlyRate"
+          label="Catio bf/sq ft"
+          name="catioBoardFeetPerSquareFoot"
           onChange={onChange}
           step="0.01"
-          value={inputs.contractorHourlyRate}
+          value={inputs.catioBoardFeetPerSquareFoot}
         />
         <NumberField
-          label="Material $/sq ft"
-          name="materialCostPerSquareFoot"
+          label="Catio non-lumber"
+          name="catioNonLumberCostPerSquareFoot"
           onChange={onChange}
           step="0.01"
-          value={inputs.materialCostPerSquareFoot}
+          value={inputs.catioNonLumberCostPerSquareFoot}
         />
+        {inputs.includeDeckBase ? (
+          <>
+            <NumberField
+              label="Deck bf/sq ft"
+              name="catioDeckBaseBoardFeetPerSquareFoot"
+              onChange={onChange}
+              step="0.01"
+              value={inputs.catioDeckBaseBoardFeetPerSquareFoot}
+            />
+            <NumberField
+              label="Deck non-lumber"
+              name="catioDeckBaseNonLumberCostPerSquareFoot"
+              onChange={onChange}
+              step="0.01"
+              value={inputs.catioDeckBaseNonLumberCostPerSquareFoot}
+            />
+          </>
+        ) : null}
         <NumberField
           label="Markup"
           name="profitMarkupPercent"
@@ -170,13 +221,18 @@ export default function QuoteForm({ inputs, onChange }) {
           step="0.01"
           value={inputs.profitMarkupPercent}
         />
-        <NumberField
-          label="Day breaks"
-          name="dayBreaks"
-          onChange={onChange}
-          step="0.25"
-          value={inputs.dayBreaks}
-        />
+        <div className="wall-area">
+          <span>Catio rate</span>
+          <strong>{formatCurrency(quote.materialPricing.catioMaterialRate)} / sq ft</strong>
+        </div>
+        {inputs.includeDeckBase ? (
+          <div className="wall-area">
+            <span>Deck rate</span>
+            <strong>
+              {formatCurrency(quote.materialPricing.catioDeckBaseMaterialRate)} / sq ft
+            </strong>
+          </div>
+        ) : null}
       </div>
     </section>
   );

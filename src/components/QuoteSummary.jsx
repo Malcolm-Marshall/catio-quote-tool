@@ -18,12 +18,62 @@ function CostRow({ label, value }) {
   );
 }
 
+function DetailRow({ label, value }) {
+  return (
+    <div className="cost-row">
+      <span>{label}</span>
+      <strong>{value}</strong>
+    </div>
+  );
+}
+
+const lumberPriceFields = [
+  {
+    field: "pressureTreatedLumberPricePerBoardFoot",
+    label: "Pressure treated",
+  },
+  {
+    field: "cedarLumberPricePerBoardFoot",
+    label: "Cedar",
+  },
+  {
+    field: "redwoodLumberPricePerBoardFoot",
+    label: "Redwood",
+  },
+];
+
+function ProviderProductRows({ details }) {
+  const providerRows = lumberPriceFields
+    .map((material) => ({
+      ...material,
+      detail: details?.[material.field],
+    }))
+    .filter(({ detail }) => Number.isFinite(Number(detail?.itemPrice)));
+
+  if (providerRows.length === 0) {
+    return null;
+  }
+
+  return providerRows.map(({ detail, field, label }) => {
+    const boardFeet = Number(detail.boardFeet);
+    const detailText = Number.isFinite(boardFeet)
+      ? `${formatCurrency(detail.itemPrice)} / ${formatNumber(boardFeet)} bf item`
+      : formatCurrency(detail.itemPrice);
+
+    return (
+      <DetailRow
+        key={field}
+        label={`${label} returned item`}
+        value={detailText}
+      />
+    );
+  });
+}
+
 export default function QuoteSummary({ quote }) {
-  const selectedOptions = [
-    ...quote.selectedUpgrades,
-    ...quote.selectedTunnelUpgrades,
-  ];
+  const selectedOptions = quote.selectedUpgrades;
   const visibleBaseCosts = quote.baseCostItems.filter((item) => item.amount > 0);
+  const lumberDetails = quote.quoteInputs.localLumberPriceDetails ?? {};
 
   return (
     <aside className="summary">
@@ -36,17 +86,24 @@ export default function QuoteSummary({ quote }) {
       <section className="panel metrics-grid">
         <Metric label="Square feet" value={formatNumber(quote.squareFeet)} />
         <Metric
-          label="Build days"
-          value={formatNumber(quote.totalBuildDays)}
+          label="Material rate"
+          value={`${formatCurrency(quote.materialPricing.catioMaterialRate)} / sq ft`}
         />
         <Metric
-          label="Labor hours"
-          value={formatNumber(quote.totalCrewLaborHours)}
+          label="Lumber market"
+          value={`${quote.quoteInputs.localLumberPriceMarket} ${quote.quoteInputs.zipCode}`}
         />
         <Metric
-          label="Upgrade hours"
-          value={formatNumber(quote.upgradeExtraHours)}
+          label="Complexity"
+          value={quote.selectedComplexity.label}
         />
+        <Metric
+          label="Selected options"
+          value={formatNumber(selectedOptions.length, 0)}
+        />
+        {quote.deckBaseTotal > 0 ? (
+          <Metric label="Deck base" value={formatCurrency(quote.deckBaseTotal)} />
+        ) : null}
       </section>
 
       <section className="panel">
@@ -60,29 +117,9 @@ export default function QuoteSummary({ quote }) {
         <div className="cost-list">
           <CostRow label="Base costs" value={quote.baseCostTotal} />
           <CostRow label="Catio upgrades" value={quote.upgradeTotal} />
-          <CostRow label="Tunnel upgrades" value={quote.tunnelUpgradeTotal} />
           <CostRow label="Before markup" value={quote.quoteBeforeMarkup} />
           <CostRow label="Markup" value={quote.profitAmount} />
           <CostRow label="Total quote" value={quote.totalQuote} />
-        </div>
-      </section>
-
-      <section className="panel">
-        <div className="panel-heading">
-          <div>
-            <p className="eyebrow">Contractor</p>
-            <h2>Targets</h2>
-          </div>
-        </div>
-
-        <div className="cost-list">
-          <CostRow label="Ask for job" value={quote.contractorDeposit} />
-          <CostRow label="Bid target" value={quote.contractorBidTarget} />
-          <CostRow
-            label="Expected contractor profit"
-            value={quote.contractorExpectedProfit}
-          />
-          <CostRow label="Cost target" value={quote.contractorCostTarget} />
         </div>
       </section>
 
@@ -98,6 +135,67 @@ export default function QuoteSummary({ quote }) {
           {visibleBaseCosts.map((item) => (
             <CostRow key={item.id} label={item.label} value={item.amount} />
           ))}
+        </div>
+      </section>
+
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <p className="eyebrow">Materials</p>
+            <h2>Lumber Pricing</h2>
+          </div>
+        </div>
+
+        <div className="cost-list compact-list">
+          <DetailRow
+            label="Provider"
+            value={quote.quoteInputs.localLumberPriceSource}
+          />
+          <ProviderProductRows details={lumberDetails} />
+          <CostRow
+            label="Provider pressure treated / bf"
+            value={quote.materialPricing.localPressureTreatedLumberPricePerBoardFoot}
+          />
+          <CostRow
+            label="Provider cedar / bf"
+            value={quote.materialPricing.localCedarLumberPricePerBoardFoot}
+          />
+          <CostRow
+            label="Provider redwood / bf"
+            value={quote.materialPricing.localRedwoodLumberPricePerBoardFoot}
+          />
+          <CostRow
+            label="Adjusted pressure treated / bf"
+            value={quote.materialPricing.adjustedPressureTreatedLumberPricePerBoardFoot}
+          />
+          <CostRow
+            label="Adjusted cedar / bf"
+            value={quote.materialPricing.adjustedCedarLumberPricePerBoardFoot}
+          />
+          <CostRow
+            label="Adjusted redwood / bf"
+            value={quote.materialPricing.adjustedRedwoodLumberPricePerBoardFoot}
+          />
+          <div className="cost-row">
+            <span>Catio board feet</span>
+            <strong>{formatNumber(quote.materialPricing.catioBoardFeet)} bf</strong>
+          </div>
+          {quote.deckBaseTotal > 0 ? (
+            <>
+              <DetailRow
+                label="Deck base area"
+                value={`${formatNumber(quote.deckBaseSquareFeet)} sq ft`}
+              />
+              <DetailRow
+                label="Deck base board feet"
+                value={`${formatNumber(quote.materialPricing.catioDeckBaseBoardFeet)} bf`}
+              />
+              <DetailRow
+                label="Total lumber board feet"
+                value={`${formatNumber(quote.materialPricing.totalCatioBoardFeet)} bf`}
+              />
+            </>
+          ) : null}
         </div>
       </section>
 

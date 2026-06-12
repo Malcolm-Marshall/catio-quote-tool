@@ -1,0 +1,1121 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 11055 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Pricing Logic Visual Guide) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (Generated from the current React calculator code on May 13, 2026. The goal is to show the live formulas, default rates,) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 710 Tm (and which fields actually move price.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+0.92 0.96 0.99 rg 42 664 79.54 18 re f
+BT /F2 8.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 51 670 Tm (Catio calculator) Tj ET
+0.92 0.98 0.94 rg 172 664 114.05000000000001 18 re f
+BT /F2 8.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 181 670 Tm (Enclosed patio calculator) Tj ET
+1 0.96 0.82 rg 342 664 153.32 18 re f
+BT /F2 8.5 Tf 0.8 0.47 0.05 rg 1 0 0 1 351 670 Tm (Source: src/lib/quoteCalculator.js) Tj ET
+BT /F2 14 Tf 0.08 0.31 0.55 rg 1 0 0 1 42 632 Tm (Catio Price Pipeline) Tj ET
+0.92 0.96 0.99 rg 42 538 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 42 538 98 76 re S
+0.08 0.31 0.55 rg 42 538 4 76 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 54 597 Tm (Inputs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 582 Tm (State/ZIP,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 571.8 Tm (dimensions, local) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 561.6 Tm (lumber prices,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 551.4000000000001 Tm (futures inputs,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 541.2 Tm (complexity level,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 531 Tm (fixed costs, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 520.8000000000001 Tm (selected upgrade) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 510.6000000000001 Tm (IDs.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 141 576 m 148 576 l S
+1.2 w 0.08 0.31 0.55 RG 148 576 m 142.59418679258548 573.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 148 576 m 142.59418679258548 578.6033024347054 l S
+0.92 0.98 0.94 rg 150 538 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 150 538 98 76 re S
+0.1 0.45 0.27 rg 150 538 4 76 re f
+BT /F2 9.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 162 597 Tm (Area + Material) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 582 Tm (Square feet,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 571.8 Tm (pressure-treated) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 561.6 Tm (lumber $/bf, futures) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 551.4000000000001 Tm (adjustment, waste,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 541.2 Tm (and non-lumber) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 531 Tm (allowance create) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 520.8000000000001 Tm (material subtotal.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 249 576 m 256 576 l S
+1.2 w 0.08 0.31 0.55 RG 256 576 m 250.59418679258548 573.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 256 576 m 250.59418679258548 578.6033024347054 l S
+1 0.96 0.82 rg 258 538 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 258 538 98 76 re S
+0.8 0.47 0.05 rg 258 538 4 76 re f
+BT /F2 9.5 Tf 0.8 0.47 0.05 rg 1 0 0 1 270 597 Tm (Base + Options) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 582 Tm (Size/material) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 571.8 Tm (subtotal, complexity) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 561.6 Tm (adjustment, fixed) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 551.4000000000001 Tm (job costs, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 541.2 Tm (selected upgrade) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 531 Tm (prices.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 357 576 m 364 576 l S
+1.2 w 0.08 0.31 0.55 RG 364 576 m 358.5941867925855 573.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 364 576 m 358.5941867925855 578.6033024347054 l S
+0.92 0.96 0.99 rg 366 538 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 366 538 98 76 re S
+0.65 0.17 0.16 rg 366 538 4 76 re f
+BT /F2 9.5 Tf 0.65 0.17 0.16 rg 1 0 0 1 378 597 Tm (Markup) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 582 Tm (Profit markup is) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 571.8 Tm (applied to the full) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 561.6 Tm (pre-markup) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 551.4000000000001 Tm (subtotal.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 465 576 m 472 576 l S
+1.2 w 0.08 0.31 0.55 RG 472 576 m 466.5941867925855 573.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 472 576 m 466.5941867925855 578.6033024347054 l S
+0.92 0.96 0.99 rg 474 538 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 474 538 98 76 re S
+0.08 0.31 0.55 rg 474 538 4 76 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 486 597 Tm (Outputs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 582 Tm (Customer quote,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 571.8 Tm (cost per sq ft,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 561.6 Tm (material subtotal,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 551.4000000000001 Tm (complexity) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 541.2 Tm (adjustment, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 531 Tm (contractor targets.) Tj ET
+BT /F2 14 Tf 0.1 0.45 0.27 rg 1 0 0 1 42 492 Tm (Enclosed Patio Price Pipeline) Tj ET
+0.92 0.96 0.99 rg 42 398 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 42 398 98 76 re S
+0.1 0.45 0.27 rg 42 398 4 76 re f
+BT /F2 9.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 54 457 Tm (Inputs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 442 Tm (Deck size, wall) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 431.8 Tm (sections, state/ZIP,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 421.6 Tm (style, lumber) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 411.40000000000003 Tm (material, local) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 401.20000000000005 Tm (lumber prices,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 391.00000000000006 Tm (futures inputs,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 380.80000000000007 Tm (overhead, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 370.6000000000001 Tm (markup.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 141 436 m 148 436 l S
+1.2 w 0.08 0.31 0.55 RG 148 436 m 142.59418679258548 433.39669756529463 l S
+1.2 w 0.08 0.31 0.55 RG 148 436 m 142.59418679258548 438.60330243470537 l S
+0.92 0.98 0.94 rg 150 398 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 150 398 98 76 re S
+0.08 0.31 0.55 rg 150 398 4 76 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 162 457 Tm (Areas) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 442 Tm (Floor sq ft, wall sq) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 431.8 Tm (ft, wall linear ft,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 421.6 Tm (roof sq ft, and deck) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 411.40000000000003 Tm (base sq ft.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 249 436 m 256 436 l S
+1.2 w 0.08 0.31 0.55 RG 256 436 m 250.59418679258548 433.39669756529463 l S
+1.2 w 0.08 0.31 0.55 RG 256 436 m 250.59418679258548 438.60330243470537 l S
+1 0.96 0.82 rg 258 398 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 258 398 98 76 re S
+0.8 0.47 0.05 rg 258 398 4 76 re f
+BT /F2 9.5 Tf 0.8 0.47 0.05 rg 1 0 0 1 270 457 Tm (Direct Costs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 442 Tm (Dynamic wall, roof,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 431.8 Tm (deck base, and trim) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 421.6 Tm (material rates plus) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 411.40000000000003 Tm (doors, shelves, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 401.20000000000005 Tm (cat door.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 357 436 m 364 436 l S
+1.2 w 0.08 0.31 0.55 RG 364 436 m 358.5941867925855 433.39669756529463 l S
+1.2 w 0.08 0.31 0.55 RG 364 436 m 358.5941867925855 438.60330243470537 l S
+0.92 0.96 0.99 rg 366 398 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 366 398 98 76 re S
+0.65 0.17 0.16 rg 366 398 4 76 re f
+BT /F2 9.5 Tf 0.65 0.17 0.16 rg 1 0 0 1 378 457 Tm (Overhead) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 442 Tm (Overhead percent) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 431.8 Tm (applies to direct) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 421.6 Tm (subtotal before) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 411.40000000000003 Tm (profit markup.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 465 436 m 472 436 l S
+1.2 w 0.08 0.31 0.55 RG 472 436 m 466.5941867925855 433.39669756529463 l S
+1.2 w 0.08 0.31 0.55 RG 472 436 m 466.5941867925855 438.60330243470537 l S
+0.92 0.96 0.99 rg 474 398 98 76 re f
+0.8 w 0.72 0.77 0.82 RG 474 398 98 76 re S
+0.1 0.45 0.27 rg 474 398 4 76 re f
+BT /F2 9.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 486 457 Tm (Outputs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 442 Tm (Patio quote, cost) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 431.8 Tm (per floor sq ft, and) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 421.6 Tm (cost per enclosure) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 411.40000000000003 Tm (sq ft.) Tj ET
+1 0.92 0.9 rg 42 279 528 58 re f
+0.65 0.17 0.16 rg 42 279 4 58 re f
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 319 Tm (Important: some UI fields are stored for quoting context but are not currently part of the price formula. Those fields are) Tj ET
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 308 Tm (called out later so you can decide whether they should become pricing drivers.) Tj ET
+0.92 0.96 0.99 rg 42 225 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 225 528 22 re S
+BT /F2 8.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 233 Tm (Calculator) Tj ET
+BT /F2 8.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 182 233 Tm (Default sample output) Tj ET
+BT /F2 8.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 332 233 Tm (Main pricing drivers) Tj ET
+0.985 0.99 1 rg 42 185.5 528 39.5 re f
+0.5 w 0.72 0.77 0.82 RG 42 185.5 528 39.5 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 212 Tm (Catio) Tj ET
+0.5 w 0.72 0.77 0.82 RG 177 225 m 177 185.5 l S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 212 Tm ($16,260.17 total, $162.60/sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 327 225 m 327 185.5 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 212 Tm (State/ZIP market, length x width, local $/board foot,) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 201.5 Tm (futures adjustment, complexity multiplier, fixed job costs,) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 191 Tm (selected upgrades, markup.) Tj ET
+1 1 1 rg 42 146 528 39.5 re f
+0.5 w 0.72 0.77 0.82 RG 42 146 528 39.5 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 172.5 Tm (Enclosed Patio) Tj ET
+0.5 w 0.72 0.77 0.82 RG 177 185.5 m 177 146 l S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 172.5 Tm ($18,696.81 total, $111.29/floor sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 327 185.5 m 327 146 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 172.5 Tm (Wall sections, state/ZIP market, lumber material, local) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 162 Tm ($/board foot, futures adjustment, style multipliers, doors,) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 332 151.5 Tm (shelves, overhead, markup.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 1) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 12539 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Catio Formula Map) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (This page follows calculateQuote\(\). Percent values are stored as decimals, so 0.38 means 38%.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+0.92 0.96 0.99 rg 42 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 42 597 98 80 re S
+0.08 0.31 0.55 rg 42 597 4 80 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 54 660 Tm (1. Area) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 645 Tm (squareFeet =) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 634.8 Tm (lengthFeet x) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 624.6 Tm (widthFeet) Tj ET
+1.2 w 0.08 0.31 0.55 RG 141 637 m 148 637 l S
+1.2 w 0.08 0.31 0.55 RG 148 637 m 142.59418679258548 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 148 637 m 142.59418679258548 639.6033024347054 l S
+0.92 0.98 0.94 rg 150 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 150 597 98 80 re S
+0.1 0.45 0.27 rg 150 597 4 80 re f
+BT /F2 9.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 162 660 Tm (2. Complexity) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 645 Tm (The selected) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 634.8 Tm (complexity level) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 624.6 Tm (chooses the) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 614.4000000000001 Tm (multiplier for the) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 604.2 Tm (material subtotal.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 249 637 m 256 637 l S
+1.2 w 0.08 0.31 0.55 RG 256 637 m 250.59418679258548 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 256 637 m 250.59418679258548 639.6033024347054 l S
+1 0.96 0.82 rg 258 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 258 597 98 80 re S
+0.8 0.47 0.05 rg 258 597 4 80 re f
+BT /F2 9.5 Tf 0.8 0.47 0.05 rg 1 0 0 1 270 660 Tm (3. Dynamic Cost) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 645 Tm (Material total uses) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 634.8 Tm (pressure-treated) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 624.6 Tm (lumber. Optional) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 614.4000000000001 Tm (deck base pricing) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 604.2 Tm (uses the catio) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 594 Tm (footprint area.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 357 637 m 364 637 l S
+1.2 w 0.08 0.31 0.55 RG 364 637 m 358.5941867925855 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 364 637 m 358.5941867925855 639.6033024347054 l S
+0.92 0.96 0.99 rg 366 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 366 597 98 80 re S
+0.65 0.17 0.16 rg 366 597 4 80 re f
+BT /F2 9.5 Tf 0.65 0.17 0.16 rg 1 0 0 1 378 660 Tm (4. Adders) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 645 Tm (Fixed job costs plus) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 634.8 Tm (selected catio) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 624.6 Tm (upgrade prices.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 465 637 m 472 637 l S
+1.2 w 0.08 0.31 0.55 RG 472 637 m 466.5941867925855 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 472 637 m 466.5941867925855 639.6033024347054 l S
+0.92 0.96 0.99 rg 474 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 474 597 98 80 re S
+0.08 0.31 0.55 rg 474 597 4 80 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 486 660 Tm (5. Quote) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 645 Tm (Markup creates) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 634.8 Tm (profit amount, then) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 624.6 Tm (total quote.) Tj ET
+0.92 0.96 0.99 rg 42 528 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 528 528 22 re S
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 536 Tm (Step) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 197 536 Tm (Formula) Tj ET
+0.985 0.99 1 rg 42 510 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 510 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 515 Tm (Square feet) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 528 m 192 510 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 515 Tm (lengthFeet x widthFeet) Tj ET
+1 1 1 rg 42 492 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 492 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 497 Tm (Futures multiplier) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 510 m 192 492 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 497 Tm (1 + futures movement percent x futures blend percent) Tj ET
+0.985 0.99 1 rg 42 474 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 474 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 479 Tm (Adjusted pressure-treated $/bf) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 492 m 192 474 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 479 Tm (local pressure-treated $/bf x futuresMultiplier) Tj ET
+1 1 1 rg 42 456 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 456 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 461 Tm (Catio board feet) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 474 m 192 456 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 461 Tm (squareFeet x catioBoardFeetPerSquareFoot x waste) Tj ET
+0.985 0.99 1 rg 42 438 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 438 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 443 Tm (Catio material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 456 m 192 438 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 443 Tm (catio non-lumber $/sq ft + adjusted pressure-treated $/bf x catio bf/sq ft x waste) Tj ET
+1 1 1 rg 42 420 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 420 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 425 Tm (Deck base sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 438 m 192 420 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 425 Tm (includeDeckBase ? squareFeet : 0) Tj ET
+0.985 0.99 1 rg 42 402 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 402 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 407 Tm (Deck base board feet) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 420 m 192 402 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 407 Tm (deckBaseSquareFeet x catioDeckBaseBoardFeetPerSquareFoot x waste) Tj ET
+1 1 1 rg 42 384 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 384 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 389 Tm (Deck base rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 402 m 192 384 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 389 Tm (deck non-lumber $/sq ft + adjusted pressure-treated $/bf x deck bf/sq ft x waste) Tj ET
+0.985 0.99 1 rg 42 366 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 366 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 371 Tm (Deck base total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 384 m 192 366 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 371 Tm (deckBaseSquareFeet x catioDeckBaseMaterialRate) Tj ET
+1 1 1 rg 42 348 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 348 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 353 Tm (Selected complexity) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 366 m 192 348 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 353 Tm (PROJECT_COMPLEXITY_OPTIONS match by complexityLevel) Tj ET
+0.985 0.99 1 rg 42 330 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 330 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 335 Tm (Complexity multiplier) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 348 m 192 330 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 335 Tm (max\(selectedComplexity.multiplier, 1\)) Tj ET
+1 1 1 rg 42 312 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 312 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 317 Tm (Material total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 330 m 192 312 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 317 Tm (catioMaterialTotal + deckBaseTotal) Tj ET
+0.985 0.99 1 rg 42 294 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 294 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 299 Tm (Complexity total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 312 m 192 294 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 299 Tm (materialTotal x \(complexityMultiplier - 1\)) Tj ET
+1 1 1 rg 42 276 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 276 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 281 Tm (Cedar/redwood lumber upgrades) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 294 m 192 276 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 281 Tm (max\(adjusted upgrade lumber $/bf - adjusted pressure-treated $/bf, 0\) x totalCatioBoardFeet) Tj ET
+0.985 0.99 1 rg 42 258 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 258 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 263 Tm (Base cost total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 276 m 192 258 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 263 Tm (materialTotal + complexityTotal + all fixed job costs) Tj ET
+1 1 1 rg 42 240 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 240 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 245 Tm (Catio upgrade total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 258 m 192 240 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 245 Tm (sum\(price\) for selected catio upgrades) Tj ET
+0.985 0.99 1 rg 42 222 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 222 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 227 Tm (Quote before markup) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 240 m 192 222 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 227 Tm (baseCostTotal + upgradeTotal) Tj ET
+1 1 1 rg 42 204 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 204 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 209 Tm (Profit amount) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 222 m 192 204 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 209 Tm (quoteBeforeMarkup x profitMarkupPercent) Tj ET
+0.985 0.99 1 rg 42 186 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 186 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 191 Tm (Total quote) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 204 m 192 186 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 191 Tm (quoteBeforeMarkup + profitAmount) Tj ET
+1 1 1 rg 42 168 528 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 168 528 18 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 173 Tm (Cost per sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 186 m 192 168 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 173 Tm (totalQuote / squareFeet when squareFeet is above 0) Tj ET
+0.92 0.96 0.99 rg 42 135 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 135 528 22 re S
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 143 Tm (Default metric) Tj ET
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 211 143 Tm (Current default value) Tj ET
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 311 143 Tm (Context) Tj ET
+0.985 0.99 1 rg 42 113 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 113 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 122 Tm (Customer price) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 135 m 206 113 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 122 Tm ($16,260.17) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 135 m 306 113 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 122 Tm (100 sq ft with no selected upgrades.) Tj ET
+1 1 1 rg 42 91 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 91 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 100 Tm (Complexity) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 113 m 206 91 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 100 Tm (Standard \(1x\)) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 113 m 306 91 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 100 Tm ($0 complexity adjustment on $5,015.20 material subtotal.) Tj ET
+0.985 0.99 1 rg 42 69 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 69 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 78 Tm (Material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 91 m 206 69 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 78 Tm ($50.15) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 91 m 306 69 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 78 Tm ($1.15/bf pressure-treated lumber with 448 total board feet.) Tj ET
+1 1 1 rg 42 47 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 47 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 56 Tm (Deck base default) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 69 m 206 47 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 56 Tm (Not included) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 69 m 306 47 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 56 Tm (When included, deck base uses 1.6 bf/sq ft over the catio footprint.) Tj ET
+0.985 0.99 1 rg 42 20 528 27 re f
+0.5 w 0.72 0.77 0.82 RG 42 20 528 27 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 34 Tm (Before markup / markup) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 47 m 206 20 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 34 Tm ($11,782.73 / $4,477.44) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 47 m 306 20 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 34 Tm (Markup is applied after fixed costs and selected option prices are) Tj ET
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 24.5 Tm (included.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 2) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 9098 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Catio Data Sources and Adjustment Notes) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (The base catio quote combines size/material pricing, complexity adjustment, fixed job costs, selected upgrade prices,) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 710 Tm (and markup.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+BT /F2 12 Tf 0.08 0.31 0.55 rg 1 0 0 1 42 672 Tm (Fixed job costs: $6,767.53 total) Tj ET
+0.92 0.96 0.99 rg 42 635 480 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 635 480 22 re S
+BT /F2 7.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 643 Tm (Fixed cost) Tj ET
+BT /F2 7.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 217 643 Tm (Amount) Tj ET
+BT /F2 7.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 287 643 Tm (Fixed cost) Tj ET
+BT /F2 7.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 457 643 Tm (Amount) Tj ET
+0.985 0.99 1 rg 42 617 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 617 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 622 Tm (Flights) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 635 m 212 617 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 622 Tm ($512.96) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 635 m 282 617 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 622 Tm (Short-term debt) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 635 m 452 617 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 622 Tm ($0) Tj ET
+1 1 1 rg 42 599 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 599 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 604 Tm (Rental truck) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 617 m 212 599 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 604 Tm ($774.36) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 617 m 282 599 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 604 Tm (Search engine optimization) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 617 m 452 599 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 604 Tm ($5) Tj ET
+0.985 0.99 1 rg 42 581 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 581 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 586 Tm (Luggage) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 599 m 212 581 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 586 Tm ($0) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 599 m 282 581 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 586 Tm (Mailchimp and Google Business Manager) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 599 m 452 581 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 586 Tm ($3) Tj ET
+1 1 1 rg 42 563 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 563 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 568 Tm (Gas) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 581 m 212 563 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 568 Tm ($163.18) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 581 m 282 563 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 568 Tm (Website services) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 581 m 452 563 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 568 Tm ($40.01) Tj ET
+0.985 0.99 1 rg 42 545 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 545 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 550 Tm (Food) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 563 m 212 545 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 550 Tm ($324.93) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 563 m 282 545 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 550 Tm (Marketing) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 563 m 452 545 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 550 Tm ($218.90) Tj ET
+1 1 1 rg 42 527 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 527 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 532 Tm (Hotel) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 545 m 212 527 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 532 Tm ($2,246.89) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 545 m 282 527 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 532 Tm (Offsite tool storage) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 545 m 452 527 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 532 Tm ($701.13) Tj ET
+0.985 0.99 1 rg 42 509 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 509 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 514 Tm (Dump) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 527 m 212 509 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 514 Tm ($0) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 527 m 282 509 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 514 Tm (New tools) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 527 m 452 509 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 514 Tm ($19.48) Tj ET
+1 1 1 rg 42 491 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 491 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 496 Tm (Project manager) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 509 m 212 491 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 496 Tm ($525) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 509 m 282 491 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 496 Tm (Unemployment insurance) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 509 m 452 491 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 496 Tm ($351.34) Tj ET
+0.985 0.99 1 rg 42 473 480 18 re f
+0.5 w 0.72 0.77 0.82 RG 42 473 480 18 re S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 478 Tm (Catio designer) Tj ET
+0.5 w 0.72 0.77 0.82 RG 212 491 m 212 473 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 217 478 Tm ($850) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 491 m 282 473 l S
+BT /F1 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 478 Tm (Workers comp and business insurance) Tj ET
+0.5 w 0.72 0.77 0.82 RG 452 491 m 452 473 l S
+BT /F2 7.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 457 478 Tm ($31.35) Tj ET
+0.92 0.96 0.99 rg 42 390 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 390 528 22 re S
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 398 Tm (Source) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 182 398 Tm (Current pricing use) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 427 398 Tm (Adjustment lever) Tj ET
+0.985 0.99 1 rg 42 351.4 528 38.599999999999994 re f
+0.5 w 0.72 0.77 0.82 RG 42 351.4 528 38.599999999999994 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 377 Tm (CATIO_UPGRADES) Tj ET
+0.5 w 0.72 0.77 0.82 RG 177 390 m 177 351.4 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 377 Tm (Selected upgrade price adds to quote. Cedar/redwood lumber) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 366.8 Tm (upgrade prices are generated from live lumber price deltas.) Tj ET
+0.5 w 0.72 0.77 0.82 RG 422 390 m 422 351.4 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 427 377 Tm (Change static prices in) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 427 366.8 Tm (src/data/upgrades.js or lumber) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 427 356.6 Tm (assumptions in src/data/defaults.js.) Tj ET
+1 1 1 rg 42 317.4 528 34 re f
+0.5 w 0.72 0.77 0.82 RG 42 317.4 528 34 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 338.4 Tm (Fixed job costs) Tj ET
+0.5 w 0.72 0.77 0.82 RG 177 351.4 m 177 317.4 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 338.4 Tm (Every fixed cost amount is always included when amount is) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 182 328.2 Tm (above or equal to 0.) Tj ET
+0.5 w 0.72 0.77 0.82 RG 422 351.4 m 422 317.4 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 427 338.4 Tm (Change FIXED_JOB_COSTS in) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 427 328.2 Tm (src/data/defaults.js.) Tj ET
+1 0.92 0.9 rg 42 201 528 66 re f
+0.65 0.17 0.16 rg 42 201 4 66 re f
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 249 Tm (Visible catio controls now feed the price formula. Deck base is priced from the catio footprint area and adds to the board feet) Tj ET
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 238 Tm (used by cedar/redwood lumber upgrades.) Tj ET
+0.92 0.96 0.99 rg 42 148 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 148 528 22 re S
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 156 Tm (Decision to make) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 277 156 Tm (Possible formula change) Tj ET
+0.985 0.99 1 rg 42 118 528 30 re f
+0.5 w 0.72 0.77 0.82 RG 42 118 528 30 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 135 Tm (Should catio height or roof be added later?) Tj ET
+0.5 w 0.72 0.77 0.82 RG 272 148 m 272 118 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 135 Tm (Only add those controls when they also add wall/enclosure surface area or) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 124.79999999999995 Tm (roof area costs.) Tj ET
+1 1 1 rg 42 88 528 30 re f
+0.5 w 0.72 0.77 0.82 RG 42 88 528 30 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 105 Tm (Should deck base assumptions vary by build type?) Tj ET
+0.5 w 0.72 0.77 0.82 RG 272 118 m 272 88 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 105 Tm (Adjust catioDeckBaseBoardFeetPerSquareFoot or) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 94.79999999999995 Tm (catioDeckBaseNonLumberCostPerSquareFoot in defaults.) Tj ET
+0.985 0.99 1 rg 42 58 528 30 re f
+0.5 w 0.72 0.77 0.82 RG 42 58 528 30 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 75 Tm (Should selected upgrades affect complexity?) Tj ET
+0.5 w 0.72 0.77 0.82 RG 272 88 m 272 58 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 75 Tm (Map upgrade selections to a complexity level or add upgrade-specific) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 277 64.79999999999995 Tm (complexity adjustments.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 15377 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Enclosed Patio Formula Map) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (This page follows calculateEnclosedPatioQuote\(\). Wall sections are the main geometry driver.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+0.92 0.96 0.99 rg 42 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 42 597 98 80 re S
+0.08 0.31 0.55 rg 42 597 4 80 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 54 660 Tm (1. Floor) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 645 Tm (floorSquareFeet =) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 634.8 Tm (lengthFeet x) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 624.6 Tm (widthFeet) Tj ET
+1.2 w 0.08 0.31 0.55 RG 141 637 m 148 637 l S
+1.2 w 0.08 0.31 0.55 RG 148 637 m 142.59418679258548 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 148 637 m 142.59418679258548 639.6033024347054 l S
+0.92 0.98 0.94 rg 150 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 150 597 98 80 re S
+0.1 0.45 0.27 rg 150 597 4 80 re f
+BT /F2 9.5 Tf 0.1 0.45 0.27 rg 1 0 0 1 162 660 Tm (2. Material Rates) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 645 Tm (Local lumber $/bf is) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 634.8 Tm (adjusted by futures) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 624.6 Tm (movement, blend) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 162 614.4000000000001 Tm (percent, and waste.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 249 637 m 256 637 l S
+1.2 w 0.08 0.31 0.55 RG 256 637 m 250.59418679258548 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 256 637 m 250.59418679258548 639.6033024347054 l S
+1 0.96 0.82 rg 258 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 258 597 98 80 re S
+0.8 0.47 0.05 rg 258 597 4 80 re f
+BT /F2 9.5 Tf 0.8 0.47 0.05 rg 1 0 0 1 270 660 Tm (3. Optional Areas) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 645 Tm (Wall rows drive wall) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 634.8 Tm (area. Roof and deck) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 624.6 Tm (base use floor sq ft) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 614.4000000000001 Tm (only when toggles) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 270 604.2 Tm (are on.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 357 637 m 364 637 l S
+1.2 w 0.08 0.31 0.55 RG 364 637 m 358.5941867925855 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 364 637 m 358.5941867925855 639.6033024347054 l S
+0.92 0.96 0.99 rg 366 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 366 597 98 80 re S
+0.65 0.17 0.16 rg 366 597 4 80 re f
+BT /F2 9.5 Tf 0.65 0.17 0.16 rg 1 0 0 1 378 660 Tm (4. Direct Costs) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 645 Tm (Dynamic material) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 634.8 Tm (rates plus doors,) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 624.6 Tm (shelves, and cat) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 378 614.4000000000001 Tm (door.) Tj ET
+1.2 w 0.08 0.31 0.55 RG 465 637 m 472 637 l S
+1.2 w 0.08 0.31 0.55 RG 472 637 m 466.5941867925855 634.3966975652946 l S
+1.2 w 0.08 0.31 0.55 RG 472 637 m 466.5941867925855 639.6033024347054 l S
+0.92 0.96 0.99 rg 474 597 98 80 re f
+0.8 w 0.72 0.77 0.82 RG 474 597 98 80 re S
+0.08 0.31 0.55 rg 474 597 4 80 re f
+BT /F2 9.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 486 660 Tm (5. Quote) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 645 Tm (Direct subtotal plus) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 634.8 Tm (overhead, then) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 624.6 Tm (markup, then total) Tj ET
+BT /F1 8.2 Tf 0.08 0.11 0.15 rg 1 0 0 1 486 614.4000000000001 Tm (quote.) Tj ET
+0.92 0.96 0.99 rg 42 528 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 528 528 22 re S
+BT /F2 7.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 536 Tm (Step) Tj ET
+BT /F2 7.5 Tf 0.08 0.31 0.55 rg 1 0 0 1 197 536 Tm (Formula) Tj ET
+0.985 0.99 1 rg 42 510.8 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 510.8 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 515 Tm (Floor sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 528 m 192 510.8 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 515 Tm (lengthFeet x widthFeet) Tj ET
+1 1 1 rg 42 493.6 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 493.6 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 497.8 Tm (Wall segment sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 510.8 m 192 493.6 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 497.8 Tm (wall.widthFeet x wall.heightFeet x wall.quantity) Tj ET
+0.985 0.99 1 rg 42 476.40000000000003 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 476.40000000000003 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 480.6 Tm (Wall segment linear ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 493.6 m 192 476.40000000000003 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 480.6 Tm (wall.widthFeet x wall.quantity) Tj ET
+1 1 1 rg 42 459.20000000000005 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 459.20000000000005 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 463.40000000000003 Tm (Enclosure sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 476.40000000000003 m 192 459.20000000000005 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 463.40000000000003 Tm (sum of wall segment square feet) Tj ET
+0.985 0.99 1 rg 42 442.00000000000006 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 442.00000000000006 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 446.20000000000005 Tm (Wall linear ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 459.20000000000005 m 192 442.00000000000006 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 446.20000000000005 Tm (sum of wall segment linear feet) Tj ET
+1 1 1 rg 42 424.80000000000007 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 424.80000000000007 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 429.00000000000006 Tm (Roof sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 442.00000000000006 m 192 424.80000000000007 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 429.00000000000006 Tm (needsRoof ? floorSquareFeet : 0) Tj ET
+0.985 0.99 1 rg 42 407.6000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 407.6000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 411.80000000000007 Tm (Deck base sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 424.80000000000007 m 192 407.6000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 411.80000000000007 Tm (includeDeckBase ? floorSquareFeet : 0) Tj ET
+1 1 1 rg 42 390.4000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 390.4000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 394.6000000000001 Tm (Selected lumber) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 407.6000000000001 m 192 390.4000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 394.6000000000001 Tm (LUMBER_MATERIAL_OPTIONS match by lumberMaterial) Tj ET
+0.985 0.99 1 rg 42 373.2000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 373.2000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 377.4000000000001 Tm (Futures multiplier) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 390.4000000000001 m 192 373.2000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 377.4000000000001 Tm (1 + futures movement percent x futures blend percent) Tj ET
+1 1 1 rg 42 356.0000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 356.0000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 360.2000000000001 Tm (Adjusted lumber $/bf) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 373.2000000000001 m 192 356.0000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 360.2000000000001 Tm (selected local lumber $/bf x futuresMultiplier) Tj ET
+0.985 0.99 1 rg 42 338.8000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 338.8000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 343.0000000000001 Tm (Wall material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 356.0000000000001 m 192 338.8000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 343.0000000000001 Tm (wall non-lumber $/sq ft + adjusted $/bf x wall bf/sq ft x waste) Tj ET
+1 1 1 rg 42 321.60000000000014 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 321.60000000000014 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 325.8000000000001 Tm (Roof material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 338.8000000000001 m 192 321.60000000000014 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 325.8000000000001 Tm (roof non-lumber $/sq ft + adjusted $/bf x roof bf/sq ft x waste) Tj ET
+0.985 0.99 1 rg 42 304.40000000000015 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 304.40000000000015 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 308.60000000000014 Tm (Deck material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 321.60000000000014 m 192 304.40000000000015 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 308.60000000000014 Tm (deck non-lumber $/sq ft + adjusted $/bf x deck bf/sq ft x waste) Tj ET
+1 1 1 rg 42 287.20000000000016 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 287.20000000000016 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 291.40000000000015 Tm (Trim material rate) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 304.40000000000015 m 192 287.20000000000016 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 291.40000000000015 Tm (trim non-lumber $/ft + adjusted $/bf x trim bf/ft x waste) Tj ET
+0.985 0.99 1 rg 42 270.0000000000001 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 270.0000000000001 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 274.20000000000016 Tm (Wall total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 287.20000000000016 m 192 270.0000000000001 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 274.20000000000016 Tm (enclosureSquareFeet x wallMaterialRate x style.wallMultiplier) Tj ET
+1 1 1 rg 42 252.80000000000007 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 252.80000000000007 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 257.0000000000001 Tm (Roof total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 270.0000000000001 m 192 252.80000000000007 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 257.0000000000001 Tm (roofSquareFeet x roofMaterialRate x style.roofMultiplier) Tj ET
+0.985 0.99 1 rg 42 235.60000000000002 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 235.60000000000002 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 239.80000000000007 Tm (Deck base total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 252.80000000000007 m 192 235.60000000000002 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 239.80000000000007 Tm (deckBaseSquareFeet x deckBaseMaterialRate x style.deckBaseMultiplier) Tj ET
+1 1 1 rg 42 218.39999999999998 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 218.39999999999998 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 222.60000000000002 Tm (Door total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 235.60000000000002 m 192 218.39999999999998 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 222.60000000000002 Tm (doorCount x doorPrice) Tj ET
+0.985 0.99 1 rg 42 201.19999999999993 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 201.19999999999993 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 205.39999999999998 Tm (Shelf total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 218.39999999999998 m 192 201.19999999999993 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 205.39999999999998 Tm (shelfCount x shelfPrice) Tj ET
+1 1 1 rg 42 183.9999999999999 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 183.9999999999999 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 188.19999999999993 Tm (Trim total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 201.19999999999993 m 192 183.9999999999999 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 188.19999999999993 Tm (includeTrim ? wallLinearFeet x trimMaterialRate : 0) Tj ET
+0.985 0.99 1 rg 42 166.79999999999984 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 166.79999999999984 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 170.9999999999999 Tm (Cat door total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 183.9999999999999 m 192 166.79999999999984 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 170.9999999999999 Tm (includeCatDoor ? catDoorPrice : 0) Tj ET
+1 1 1 rg 42 149.5999999999998 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 149.5999999999998 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 153.79999999999984 Tm (Direct subtotal) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 166.79999999999984 m 192 149.5999999999998 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 153.79999999999984 Tm (sum of all direct cost items) Tj ET
+0.985 0.99 1 rg 42 132.39999999999975 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 132.39999999999975 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 136.5999999999998 Tm (Overhead total) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 149.5999999999998 m 192 132.39999999999975 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 136.5999999999998 Tm (directSubtotal x overheadPercent) Tj ET
+1 1 1 rg 42 115.1999999999997 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 115.1999999999997 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 119.39999999999975 Tm (Quote before markup) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 132.39999999999975 m 192 115.1999999999997 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 119.39999999999975 Tm (directSubtotal + overheadTotal) Tj ET
+0.985 0.99 1 rg 42 97.99999999999966 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 97.99999999999966 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 102.1999999999997 Tm (Profit amount) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 115.1999999999997 m 192 97.99999999999966 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 102.1999999999997 Tm (quoteBeforeMarkup x profitMarkupPercent) Tj ET
+1 1 1 rg 42 80.79999999999961 528 17.2 re f
+0.5 w 0.72 0.77 0.82 RG 42 80.79999999999961 528 17.2 re S
+BT /F2 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 84.99999999999966 Tm (Total quote) Tj ET
+0.5 w 0.72 0.77 0.82 RG 192 97.99999999999966 m 192 80.79999999999961 l S
+BT /F1 7.5 Tf 0.08 0.11 0.15 rg 1 0 0 1 197 84.99999999999966 Tm (quoteBeforeMarkup + profitAmount) Tj ET
+0.92 0.96 0.99 rg 42 120 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 120 528 22 re S
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 128 Tm (Default metric) Tj ET
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 211 128 Tm (Current default value) Tj ET
+BT /F2 7.8 Tf 0.08 0.31 0.55 rg 1 0 0 1 311 128 Tm (Context) Tj ET
+0.985 0.99 1 rg 42 98 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 98 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 107 Tm (Patio quote) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 120 m 206 98 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 107 Tm ($18,696.81) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 120 m 306 98 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 107 Tm (168 floor sq ft and 416 wall sq ft.) Tj ET
+1 1 1 rg 42 76 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 76 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 85 Tm (Direct subtotal / overhead) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 98 m 206 76 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 85 Tm ($12,544.83 / $1,003.59) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 98 m 306 76 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 85 Tm (Overhead is added before profit markup.) Tj ET
+0.985 0.99 1 rg 42 54 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 54 528 22 re S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 63 Tm (Cost per floor sq ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 206 76 m 206 54 l S
+BT /F2 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 211 63 Tm ($111.29) Tj ET
+0.5 w 0.72 0.77 0.82 RG 306 76 m 306 54 l S
+BT /F1 7.8 Tf 0.08 0.11 0.15 rg 1 0 0 1 311 63 Tm (Style: Screened Patio.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 11361 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Enclosed Patio Defaults and Multipliers) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (The enclosed patio calculator prices wall enclosure area more explicitly than the catio calculator.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+0.92 0.96 0.99 rg 42 652 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 652 528 22 re S
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 660 Tm (Patio style) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 252 660 Tm (Wall x) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 322 660 Tm (Roof x) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 392 660 Tm (Deck base x) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 482 660 Tm (Pricing effect) Tj ET
+0.985 0.99 1 rg 42 624 528 28 re f
+0.5 w 0.72 0.77 0.82 RG 42 624 528 28 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 639 Tm (Screened Patio) Tj ET
+0.5 w 0.72 0.77 0.82 RG 247 652 m 247 624 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 252 639 Tm (1) Tj ET
+0.5 w 0.72 0.77 0.82 RG 317 652 m 317 624 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 322 639 Tm (1) Tj ET
+0.5 w 0.72 0.77 0.82 RG 387 652 m 387 624 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 392 639 Tm (1) Tj ET
+0.5 w 0.72 0.77 0.82 RG 477 652 m 477 624 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 639 Tm (Multiplies area-based) Tj ET
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 629 Tm (costs.) Tj ET
+1 1 1 rg 42 596 528 28 re f
+0.5 w 0.72 0.77 0.82 RG 42 596 528 28 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 611 Tm (Existing Porch Conversion) Tj ET
+0.5 w 0.72 0.77 0.82 RG 247 624 m 247 596 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 252 611 Tm (0.85) Tj ET
+0.5 w 0.72 0.77 0.82 RG 317 624 m 317 596 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 322 611 Tm (0.85) Tj ET
+0.5 w 0.72 0.77 0.82 RG 387 624 m 387 596 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 392 611 Tm (0.9) Tj ET
+0.5 w 0.72 0.77 0.82 RG 477 624 m 477 596 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 611 Tm (Multiplies area-based) Tj ET
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 601 Tm (costs.) Tj ET
+0.985 0.99 1 rg 42 568 528 28 re f
+0.5 w 0.72 0.77 0.82 RG 42 568 528 28 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 583 Tm (Premium Cat-Safe Enclosure) Tj ET
+0.5 w 0.72 0.77 0.82 RG 247 596 m 247 568 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 252 583 Tm (1.25) Tj ET
+0.5 w 0.72 0.77 0.82 RG 317 596 m 317 568 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 322 583 Tm (1.15) Tj ET
+0.5 w 0.72 0.77 0.82 RG 387 596 m 387 568 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 392 583 Tm (1.1) Tj ET
+0.5 w 0.72 0.77 0.82 RG 477 596 m 477 568 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 583 Tm (Multiplies area-based) Tj ET
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 482 573 Tm (costs.) Tj ET
+0.92 0.96 0.99 rg 42 532 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 532 528 22 re S
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 540 Tm (Default input) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 215 540 Tm (Value) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 313 540 Tm (Pricing use) Tj ET
+0.985 0.99 1 rg 42 500 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 500 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 519 Tm (Deck length x width) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 532 m 210 500 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 519 Tm (14 x 12) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 532 m 308 500 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 519 Tm (Creates floor square feet for roof/deck base and per-floor) Tj ET
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 509 Tm (reporting.) Tj ET
+1 1 1 rg 42 468 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 468 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 487 Tm (Default walls) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 500 m 210 468 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 487 Tm (2x 14x8, 2x 12x8) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 500 m 308 468 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 487 Tm (Creates enclosure sq ft and wall linear ft.) Tj ET
+0.985 0.99 1 rg 42 436 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 436 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 455 Tm (State / ZIP market) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 468 m 210 436 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 455 Tm (Ohio 43215) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 468 m 308 436 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 455 Tm (Selects the local lumber price set that fills the board-foot prices.) Tj ET
+1 1 1 rg 42 404 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 404 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 423 Tm (Lumber material) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 436 m 210 404 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 423 Tm (Pressure Treated) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 436 m 308 404 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 423 Tm (Selects which local $/board foot value feeds material rates.) Tj ET
+0.985 0.99 1 rg 42 372 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 372 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 391 Tm (Local lumber $/bf) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 404 m 210 372 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 391 Tm ($1.15) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 404 m 308 372 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 391 Tm (Anchors the dynamic material price from the state pricing lookup.) Tj ET
+1 1 1 rg 42 340 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 340 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 359 Tm (Futures current / baseline) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 372 m 210 340 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 359 Tm ($575 / $575) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 372 m 308 340 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 359 Tm (Creates the futures movement used to adjust local lumber.) Tj ET
+0.985 0.99 1 rg 42 308 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 308 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 327 Tm (Blend / waste) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 340 m 210 308 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 327 Tm (0.25 / 0.12) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 340 m 308 308 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 327 Tm (Controls how much futures movement matters, plus material waste.) Tj ET
+1 1 1 rg 42 276 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 276 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 295 Tm (Wall / roof / deck rates) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 308 m 210 276 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 295 Tm ($26.74 / $10.97 / $26.06) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 308 m 308 276 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 295 Tm (Derived from local lumber, futures adjustment, board-foot factors,) Tj ET
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 285 Tm (and non-lumber allowances.) Tj ET
+0.985 0.99 1 rg 42 244 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 244 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 263 Tm (Door / shelf / cat door) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 276 m 210 244 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 263 Tm ($650 / $70 / $250) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 276 m 308 244 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 263 Tm (Count-based or toggle-based direct costs.) Tj ET
+1 1 1 rg 42 212 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 212 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 231 Tm (Trim) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 244 m 210 212 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 231 Tm ($4.64/linear ft) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 244 m 308 212 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 231 Tm (Derived material rate; only applies when includeTrim is true.) Tj ET
+0.985 0.99 1 rg 42 180 528 32 re f
+0.5 w 0.72 0.77 0.82 RG 42 180 528 32 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 199 Tm (Overhead / markup) Tj ET
+0.5 w 0.72 0.77 0.82 RG 210 212 m 210 180 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 215 199 Tm (0.08 / 0.38) Tj ET
+0.5 w 0.72 0.77 0.82 RG 308 212 m 308 180 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 313 199 Tm (Overhead applies to direct subtotal; markup applies after overhead.) Tj ET
+0.92 0.96 0.99 rg 42 280 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 280 528 22 re S
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 288 Tm (Default direct cost item) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 287 288 Tm (Amount) Tj ET
+BT /F2 8 Tf 0.08 0.31 0.55 rg 1 0 0 1 382 288 Tm (When included) Tj ET
+0.985 0.99 1 rg 42 258 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 258 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 267 Tm (Wall enclosure) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 280 m 282 258 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 267 Tm ($11,123.34) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 280 m 377 258 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 267 Tm (Included by count or area.) Tj ET
+1 1 1 rg 42 236 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 236 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 245 Tm (Roof area) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 258 m 282 236 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 245 Tm ($0) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 258 m 377 236 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 245 Tm (Only when roof needed is true.) Tj ET
+0.985 0.99 1 rg 42 214 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 214 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 223 Tm (Full deck base) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 236 m 282 214 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 223 Tm ($0) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 236 m 377 214 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 223 Tm (Only when full deck base is true.) Tj ET
+1 1 1 rg 42 192 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 192 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 201 Tm (Doors) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 214 m 282 192 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 201 Tm ($650) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 214 m 377 192 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 201 Tm (Included by count or area.) Tj ET
+0.985 0.99 1 rg 42 170 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 170 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 179 Tm (Shelves) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 192 m 282 170 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 179 Tm ($280) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 192 m 377 170 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 179 Tm (Included by count or area.) Tj ET
+1 1 1 rg 42 148 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 148 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 157 Tm (Wall trim) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 170 m 282 148 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 157 Tm ($241.49) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 170 m 377 148 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 157 Tm (Only when finishing trim is true.) Tj ET
+0.985 0.99 1 rg 42 126 528 22 re f
+0.5 w 0.72 0.77 0.82 RG 42 126 528 22 re S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 135 Tm (Cat door) Tj ET
+0.5 w 0.72 0.77 0.82 RG 282 148 m 282 126 l S
+BT /F2 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 287 135 Tm ($250) Tj ET
+0.5 w 0.72 0.77 0.82 RG 377 148 m 377 126 l S
+BT /F1 8 Tf 0.08 0.11 0.15 rg 1 0 0 1 382 135 Tm (Only when cat door is true.) Tj ET
+1 0.96 0.82 rg 42 56 528 46 re f
+0.8 0.47 0.05 rg 42 56 4 46 re f
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 84 Tm (Visible patio controls feed pricing. State and ZIP update local lumber prices; wall row width, height, and quantity drive) Tj ET
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 73 Tm (enclosure square footage.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 7521 >>
+stream
+BT /F2 21 Tf 0.08 0.11 0.15 rg 1 0 0 1 42 742 Tm (Adjustment Map) Tj ET
+BT /F1 9.5 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 722 Tm (Use this as a quick guide when changing the pricing model or UI knobs.) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 700 m 570 700 l S
+0.92 0.96 0.99 rg 42 652 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 652 528 22 re S
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 660 Tm (What you want to change) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 227 660 Tm (Where to edit) Tj ET
+BT /F2 8.1 Tf 0.08 0.31 0.55 rg 1 0 0 1 391 660 Tm (Notes) Tj ET
+0.985 0.99 1 rg 42 621 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 621 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 639 Tm (Catio default rates, percents, complexity,) Tj ET
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 628.8 Tm (dimensions, deck base) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 652 m 222 621 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 639 Tm (src/data/defaults.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 652 m 386 621 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 639 Tm (DEFAULT_QUOTE_INPUTS controls reset) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 628.8 Tm (state and first load.) Tj ET
+1 1 1 rg 42 590 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 590 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 608 Tm (Fixed catio job cost amounts) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 621 m 222 590 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 608 Tm (src/data/defaults.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 621 m 386 590 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 608 Tm (FIXED_JOB_COSTS is always included in) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 597.8 Tm (baseCostTotal.) Tj ET
+0.985 0.99 1 rg 42 559 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 559 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 577 Tm (Catio upgrade prices) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 590 m 222 559 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 577 Tm (src/data/upgrades.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 590 m 386 559 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 577 Tm (Selected price values are added before markup.) Tj ET
+1 1 1 rg 42 528 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 528 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 546 Tm (Catio core formulas) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 559 m 222 528 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 546 Tm (src/lib/quoteCalculator.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 559 m 386 528 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 546 Tm (calculateQuote\(\) owns the pricing math and) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 535.8 Tm (returned summary values.) Tj ET
+0.985 0.99 1 rg 42 497 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 497 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 515 Tm (Patio material rates, toggles, wall rows) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 528 m 222 497 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 515 Tm (src/data/defaults.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 528 m 386 497 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 515 Tm (DEFAULT_ENCLOSED_PATIO_INPUTS) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 504.8 Tm (controls reset state and first load.) Tj ET
+1 1 1 rg 42 466 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 466 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 484 Tm (Patio style multipliers) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 497 m 222 466 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 484 Tm (src/data/defaults.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 497 m 386 466 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 484 Tm (ENCLOSED_PATIO_STYLE_OPTIONS controls) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 473.8 Tm (wall, roof, and deck multipliers.) Tj ET
+0.985 0.99 1 rg 42 435 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 435 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 453 Tm (Patio core formulas) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 466 m 222 435 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 453 Tm (src/lib/quoteCalculator.js) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 466 m 386 435 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 453 Tm (calculateEnclosedPatioQuote\(\) owns the) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 442.8 Tm (pricing math.) Tj ET
+1 1 1 rg 42 404 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 404 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 422 Tm (Visible fields and labels) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 435 m 222 404 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 422 Tm (src/components/*.jsx) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 435 m 386 404 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 422 Tm (QuoteForm and EnclosedPatioCalculator render) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 411.8 Tm (input controls.) Tj ET
+0.985 0.99 1 rg 42 373 528 31 re f
+0.5 w 0.72 0.77 0.82 RG 42 373 528 31 re S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 391 Tm (Numeric input parsing) Tj ET
+0.5 w 0.72 0.77 0.82 RG 222 404 m 222 373 l S
+BT /F2 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 227 391 Tm (src/App.jsx) Tj ET
+0.5 w 0.72 0.77 0.82 RG 386 404 m 386 373 l S
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 391 Tm (Add new numeric fields to numericFields so) Tj ET
+BT /F1 8.1 Tf 0.08 0.11 0.15 rg 1 0 0 1 391 380.8 Tm (values are stored as numbers.) Tj ET
+BT /F2 13 Tf 0.08 0.31 0.55 rg 1 0 0 1 42 332 Tm (High-leverage pricing decisions to confirm) Tj ET
+0.92 0.96 0.99 rg 42 290 528 22 re f
+0.8 w 0.72 0.77 0.82 RG 42 290 528 22 re S
+BT /F2 8.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 47 298 Tm (Topic) Tj ET
+BT /F2 8.4 Tf 0.08 0.31 0.55 rg 1 0 0 1 207 298 Tm (Why it matters) Tj ET
+0.985 0.99 1 rg 42 256 528 34 re f
+0.5 w 0.72 0.77 0.82 RG 42 256 528 34 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 277 Tm (Catio uses footprint size) Tj ET
+0.5 w 0.72 0.77 0.82 RG 202 290 m 202 256 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 277 Tm (Length and width drive the catio material subtotal, and the deck base toggle uses that same) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 266.5 Tm (footprint area.) Tj ET
+1 1 1 rg 42 222 528 34 re f
+0.5 w 0.72 0.77 0.82 RG 42 222 528 34 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 243 Tm (Upgrade price is customer-facing) Tj ET
+0.5 w 0.72 0.77 0.82 RG 202 256 m 202 222 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 243 Tm (Upgrade price adds to the quote as a direct option adder before markup.) Tj ET
+0.985 0.99 1 rg 42 188 528 34 re f
+0.5 w 0.72 0.77 0.82 RG 42 188 528 34 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 209 Tm (Patio walls are explicit) Tj ET
+0.5 w 0.72 0.77 0.82 RG 202 222 m 202 188 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 209 Tm (Patio pricing is more geometry-based; changing wall rows immediately changes enclosure sq) Tj ET
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 198.5 Tm (ft and trim linear ft.) Tj ET
+1 1 1 rg 42 154 528 34 re f
+0.5 w 0.72 0.77 0.82 RG 42 154 528 34 re S
+BT /F2 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 47 175 Tm (Markup order differs from overhead) Tj ET
+0.5 w 0.72 0.77 0.82 RG 202 188 m 202 154 l S
+BT /F1 8.4 Tf 0.08 0.11 0.15 rg 1 0 0 1 207 175 Tm (For patio, overhead is added first, then markup. For catio, there is no separate overhead step.) Tj ET
+0.92 0.98 0.94 rg 42 68 528 44 re f
+0.1 0.45 0.27 rg 42 68 4 44 re f
+BT /F1 8.7 Tf 0.08 0.11 0.15 rg 1 0 0 1 54 94 Tm (Regenerate this PDF after formula or data changes by running: node scripts/generate-pricing-logic-pdf.mjs) Tj ET
+0.8 w 0.72 0.77 0.82 RG 42 44 m 570 44 l S
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 42 27 Tm (Sky Catio quote tool pricing logic) Tj ET
+BT /F1 8 Tf 0.38 0.43 0.49 rg 1 0 0 1 534 27 Tm (Page 6) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000149 00000 n 
+0000000219 00000 n 
+0000000294 00000 n 
+0000000362 00000 n 
+0000011470 00000 n 
+0000011616 00000 n 
+0000024208 00000 n 
+0000024354 00000 n 
+0000033505 00000 n 
+0000033653 00000 n 
+0000049084 00000 n 
+0000049232 00000 n 
+0000060647 00000 n 
+0000060795 00000 n 
+0000068369 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R >>
+startxref
+68517
+%%EOF

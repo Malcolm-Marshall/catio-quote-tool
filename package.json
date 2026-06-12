@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "pricing:server": "node server/lumber-pricing-server.mjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

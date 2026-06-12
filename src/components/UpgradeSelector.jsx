@@ -1,4 +1,4 @@
-import { formatCurrency, formatNumber } from "../lib/quoteCalculator.js";
+import { formatCurrency } from "../lib/quoteCalculator.js";
 
 function UpgradeList({ title, upgrades, selectedIds, onToggle }) {
   return (
@@ -27,12 +27,7 @@ function UpgradeList({ title, upgrades, selectedIds, onToggle }) {
               />
               <span className="upgrade-copy">
                 <span>{upgrade.name}</span>
-                <small>
-                  {formatCurrency(upgrade.price)}
-                  {upgrade.extraHours
-                    ? ` / ${formatNumber(upgrade.extraHours)} hrs`
-                    : ""}
-                </small>
+                <small>{formatCurrency(upgrade.price)}</small>
               </span>
             </label>
           );
@@ -44,11 +39,8 @@ function UpgradeList({ title, upgrades, selectedIds, onToggle }) {
 
 export default function UpgradeSelector({
   upgrades,
-  tunnelUpgrades,
   selectedUpgradeIds,
-  selectedTunnelUpgradeIds,
   onToggleUpgrade,
-  onToggleTunnelUpgrade,
 }) {
   return (
     <div className="upgrade-grid">
@@ -57,12 +49,6 @@ export default function UpgradeSelector({
         selectedIds={selectedUpgradeIds}
         title="Catio Upgrades"
         upgrades={upgrades}
-      />
-      <UpgradeList
-        onToggle={onToggleTunnelUpgrade}
-        selectedIds={selectedTunnelUpgradeIds}
-        title="Tunnel Upgrades"
-        upgrades={tunnelUpgrades}
       />
     </div>
   );

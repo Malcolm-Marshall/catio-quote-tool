@@ -1,0 +1,260 @@
+{
+  "generatedAt": "2026-05-20T22:10:49.429Z",
+  "notes": [
+    "Expected outputs are rounded with the current quoteCalculator.js roundMoney behavior.",
+    "These fixtures use default Ohio fallback/local lumber inputs, not live Unwrangle calls."
+  ],
+  "catio": [
+    {
+      "id": "catio-default-no-upgrades",
+      "description": "Default catio quote, no deck base, no selected upgrades.",
+      "inputs": {},
+      "expected": {
+        "totalQuote": 16260.17,
+        "quoteBeforeMarkup": 11782.73,
+        "profitAmount": 4477.44,
+        "costPerSquareFoot": 162.6,
+        "squareFeet": 100,
+        "materialTotal": 5015.2,
+        "catioMaterialTotal": 5015.2,
+        "deckBaseTotal": 0,
+        "complexityTotal": 0,
+        "upgradeTotal": 0,
+        "selectedUpgradeIds": [],
+        "materialPricing": {
+          "adjustedPressureTreatedLumberPricePerBoardFoot": 1.15,
+          "adjustedCedarLumberPricePerBoardFoot": 3.5,
+          "adjustedRedwoodLumberPricePerBoardFoot": 5.25,
+          "catioBoardFeet": 448,
+          "catioDeckBaseBoardFeet": 0,
+          "totalCatioBoardFeet": 448,
+          "catioMaterialRate": 50.15,
+          "catioDeckBaseMaterialRate": 26.06
+        }
+      }
+    },
+    {
+      "id": "catio-with-deck-base",
+      "description": "Default catio footprint with deck base included.",
+      "inputs": {
+        "includeDeckBase": true
+      },
+      "expected": {
+        "totalQuote": 19856.56,
+        "quoteBeforeMarkup": 14388.81,
+        "profitAmount": 5467.75,
+        "costPerSquareFoot": 198.57,
+        "squareFeet": 100,
+        "materialTotal": 7621.28,
+        "catioMaterialTotal": 5015.2,
+        "deckBaseTotal": 2606.08,
+        "complexityTotal": 0,
+        "upgradeTotal": 0,
+        "selectedUpgradeIds": [],
+        "materialPricing": {
+          "adjustedPressureTreatedLumberPricePerBoardFoot": 1.15,
+          "adjustedCedarLumberPricePerBoardFoot": 3.5,
+          "adjustedRedwoodLumberPricePerBoardFoot": 5.25,
+          "catioBoardFeet": 448,
+          "catioDeckBaseBoardFeet": 179.2,
+          "totalCatioBoardFeet": 627.2,
+          "catioMaterialRate": 50.15,
+          "catioDeckBaseMaterialRate": 26.06
+        }
+      }
+    },
+    {
+      "id": "catio-with-deck-base-and-cedar-upgrade",
+      "description": "Deck base included; cedar lumber upgrade uses total catio board feet, including deck base board feet.",
+      "inputs": {
+        "includeDeckBase": true,
+        "selectedUpgradeIds": [
+          "catio-cedar-lumber"
+        ]
+      },
+      "expected": {
+        "totalQuote": 21890.57,
+        "quoteBeforeMarkup": 15862.73,
+        "profitAmount": 6027.84,
+        "costPerSquareFoot": 218.91,
+        "squareFeet": 100,
+        "materialTotal": 7621.28,
+        "catioMaterialTotal": 5015.2,
+        "deckBaseTotal": 2606.08,
+        "complexityTotal": 0,
+        "upgradeTotal": 1473.92,
+        "selectedUpgradeIds": [
+          "catio-cedar-lumber"
+        ],
+        "materialPricing": {
+          "adjustedPressureTreatedLumberPricePerBoardFoot": 1.15,
+          "adjustedCedarLumberPricePerBoardFoot": 3.5,
+          "adjustedRedwoodLumberPricePerBoardFoot": 5.25,
+          "catioBoardFeet": 448,
+          "catioDeckBaseBoardFeet": 179.2,
+          "totalCatioBoardFeet": 627.2,
+          "catioMaterialRate": 50.15,
+          "catioDeckBaseMaterialRate": 26.06
+        }
+      }
+    },
+    {
+      "id": "catio-complex-with-static-upgrades",
+      "description": "Larger complex catio with paint and premium double-screening selected.",
+      "inputs": {
+        "lengthFeet": 14,
+        "widthFeet": 10,
+        "complexityLevel": "complex",
+        "selectedUpgradeIds": [
+          "catio-paint",
+          "catio-double-screen-premium"
+        ]
+      },
+      "expected": {
+        "totalQuote": 33144.03,
+        "quoteBeforeMarkup": 24017.41,
+        "profitAmount": 9126.62,
+        "costPerSquareFoot": 236.74,
+        "squareFeet": 140,
+        "materialTotal": 7021.28,
+        "catioMaterialTotal": 7021.28,
+        "deckBaseTotal": 0,
+        "complexityTotal": 2106.38,
+        "upgradeTotal": 8122.22,
+        "selectedUpgradeIds": [
+          "catio-paint",
+          "catio-double-screen-premium"
+        ],
+        "materialPricing": {
+          "adjustedPressureTreatedLumberPricePerBoardFoot": 1.15,
+          "adjustedCedarLumberPricePerBoardFoot": 3.5,
+          "adjustedRedwoodLumberPricePerBoardFoot": 5.25,
+          "catioBoardFeet": 627.2,
+          "catioDeckBaseBoardFeet": 0,
+          "totalCatioBoardFeet": 627.2,
+          "catioMaterialRate": 50.15,
+          "catioDeckBaseMaterialRate": 26.06
+        }
+      }
+    }
+  ],
+  "enclosedPatio": [
+    {
+      "id": "patio-default-screened",
+      "description": "Default enclosed patio quote, pressure treated, no roof, no deck base.",
+      "inputs": {},
+      "expected": {
+        "totalQuote": 18696.81,
+        "quoteBeforeMarkup": 13548.42,
+        "profitAmount": 5148.4,
+        "costPerFloorSquareFoot": 111.29,
+        "floorSquareFeet": 168,
+        "enclosureSquareFeet": 416,
+        "roofSquareFeet": 0,
+        "deckBaseSquareFeet": 0,
+        "wallTotal": 11123.34,
+        "roofTotal": 0,
+        "deckBaseTotal": 0,
+        "directSubtotal": 12544.83,
+        "overheadTotal": 1003.59,
+        "selectedLumberMaterial": "pressure-treated",
+        "materialPricing": {
+          "adjustedLumberPricePerBoardFoot": 1.15,
+          "wallMaterialRate": 26.74,
+          "roofMaterialRate": 10.97,
+          "deckBaseMaterialRate": 26.06,
+          "trimMaterialRate": 4.64
+        }
+      }
+    },
+    {
+      "id": "patio-cedar-with-roof-and-deck-base",
+      "description": "Default patio with cedar lumber, roof, and full deck base included.",
+      "inputs": {
+        "lumberMaterial": "cedar",
+        "needsRoof": true,
+        "includeDeckBase": true
+      },
+      "expected": {
+        "totalQuote": 31821.54,
+        "quoteBeforeMarkup": 23059.09,
+        "profitAmount": 8762.45,
+        "costPerFloorSquareFoot": 189.41,
+        "floorSquareFeet": 168,
+        "enclosureSquareFeet": 416,
+        "roofSquareFeet": 168,
+        "deckBaseSquareFeet": 168,
+        "wallTotal": 12601.47,
+        "roofTotal": 2173.92,
+        "deckBaseTotal": 5085.7,
+        "directSubtotal": 21351.01,
+        "overheadTotal": 1708.08,
+        "selectedLumberMaterial": "cedar",
+        "materialPricing": {
+          "adjustedLumberPricePerBoardFoot": 3.5,
+          "wallMaterialRate": 30.29,
+          "roofMaterialRate": 12.94,
+          "deckBaseMaterialRate": 30.27,
+          "trimMaterialRate": 5.96
+        }
+      }
+    },
+    {
+      "id": "patio-premium-custom-walls",
+      "description": "Premium enclosure with custom wall sections and more openings/interior items.",
+      "inputs": {
+        "patioStyle": "premium-cat-safe-enclosure",
+        "lumberMaterial": "redwood",
+        "lengthFeet": 16,
+        "widthFeet": 10,
+        "needsRoof": true,
+        "includeDeckBase": true,
+        "doorCount": 2,
+        "shelfCount": 8,
+        "walls": [
+          {
+            "id": "long-wall",
+            "widthFeet": 16,
+            "heightFeet": 8,
+            "quantity": 2
+          },
+          {
+            "id": "short-wall",
+            "widthFeet": 10,
+            "heightFeet": 8,
+            "quantity": 2
+          },
+          {
+            "id": "partial-return",
+            "widthFeet": 5,
+            "heightFeet": 8,
+            "quantity": 1
+          }
+        ]
+      },
+      "expected": {
+        "totalQuote": 44431.04,
+        "quoteBeforeMarkup": 32196.41,
+        "profitAmount": 12234.63,
+        "costPerFloorSquareFoot": 277.69,
+        "floorSquareFeet": 160,
+        "enclosureSquareFeet": 456,
+        "roofSquareFeet": 160,
+        "deckBaseSquareFeet": 160,
+        "wallTotal": 18774.66,
+        "roofTotal": 2651.44,
+        "deckBaseTotal": 5879.81,
+        "directSubtotal": 29811.49,
+        "overheadTotal": 2384.92,
+        "selectedLumberMaterial": "redwood",
+        "materialPricing": {
+          "adjustedLumberPricePerBoardFoot": 5.25,
+          "wallMaterialRate": 32.94,
+          "roofMaterialRate": 14.41,
+          "deckBaseMaterialRate": 33.41,
+          "trimMaterialRate": 6.94
+        }
+      }
+    }
+  ]
+}

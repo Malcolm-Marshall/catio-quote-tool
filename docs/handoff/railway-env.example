@@ -1,0 +1,58 @@
+# Railway runtime
+NODE_ENV=production
+PORT=8787
+LUMBER_PRICING_HOST=0.0.0.0
+
+# Frontend URL allowed to call the pricing API.
+# Use your Railway frontend URL or custom domain in production.
+LUMBER_PRICING_ALLOWED_ORIGINS=https://your-frontend.up.railway.app
+
+# Preferred provider
+LUMBER_PRICING_PROVIDER=unwrangle
+
+# Unwrangle
+UNWRANGLE_API_KEY=replace_me
+UNWRANGLE_API_URL=https://data.unwrangle.com/api/getter/
+UNWRANGLE_PRICE_UNIT=cents
+
+# Lowe's product pages routed through Unwrangle.
+# Use product URLs that represent the lumber item you want as the pricing basis.
+UNWRANGLE_PRESSURE_TREATED_PRODUCT_URL=https://www.lowes.com/pd/replace-pressure-treated-product
+UNWRANGLE_CEDAR_PRODUCT_URL=https://www.lowes.com/pd/replace-cedar-product
+UNWRANGLE_REDWOOD_PRODUCT_URL=https://www.lowes.com/pd/replace-redwood-product
+
+# Optional Unwrangle tuning
+# UNWRANGLE_STORE_NO=
+# UNWRANGLE_INCLUDE_SOURCE=true
+# UNWRANGLE_PRICE_JSON_PATH=product.price
+# UNWRANGLE_PRESSURE_TREATED_PRICE_JSON_PATH=product.price
+# UNWRANGLE_CEDAR_PRICE_JSON_PATH=product.price
+# UNWRANGLE_REDWOOD_PRICE_JSON_PATH=product.price
+
+# Board-foot assumptions for converting item price to dollars per board foot.
+LUMBER_DEFAULT_THICKNESS_INCHES=2
+LUMBER_DEFAULT_WIDTH_INCHES=4
+LUMBER_DEFAULT_LENGTH_FEET=8
+
+# Optional material-specific board-foot overrides.
+# UNWRANGLE_PRESSURE_TREATED_THICKNESS_INCHES=2
+# UNWRANGLE_PRESSURE_TREATED_WIDTH_INCHES=4
+# UNWRANGLE_PRESSURE_TREATED_LENGTH_FEET=8
+# UNWRANGLE_CEDAR_THICKNESS_INCHES=2
+# UNWRANGLE_CEDAR_WIDTH_INCHES=4
+# UNWRANGLE_CEDAR_LENGTH_FEET=8
+# UNWRANGLE_REDWOOD_THICKNESS_INCHES=2
+# UNWRANGLE_REDWOOD_WIDTH_INCHES=4
+# UNWRANGLE_REDWOOD_LENGTH_FEET=8
+
+# Direct Lowe's provider fallback. Only required if LUMBER_PRICING_PROVIDER=lowes.
+# LOWES_API_KEY=replace_me
+# LOWES_API_KEY_HEADER=Ocp-Apim-Subscription-Key
+# LOWES_API_KEY_QUERY_PARAM=
+# LOWES_PRODUCT_PRICE_URL_TEMPLATE=https://api.lowes.com/products/{productId}?zipCode={zipCode}
+# LOWES_PRESSURE_TREATED_PRODUCT_ID=
+# LOWES_CEDAR_PRODUCT_ID=
+# LOWES_REDWOOD_PRODUCT_ID=
+
+# If frontend and backend are separate Railway services, the frontend build needs:
+# VITE_LUMBER_PRICING_ENDPOINT=https://your-backend.up.railway.app/api/lumber-prices
