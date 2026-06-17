@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:server": "node server/lumber-pricing-server.mjs",
+    "dev:server": "node server.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server/lumber-pricing-server.mjs",
+    "prestart": "npm run build",
+    "start": "node server.js",
     "lint": "eslint ."
   },
   "dependencies": {

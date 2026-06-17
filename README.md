@@ -56,7 +56,7 @@ cp .env.example .env.local
 Run the backend and frontend in two terminals:
 
 ```bash
-npm run pricing:server
+npm run dev:server
 npm run dev
 ```
 
@@ -97,7 +97,7 @@ Their docs list `price` as the current product price in cents for the Lowe's det
 
 ## Direct Lowe's API Setup
 
-Use the Lowe's API from `server/lumber-pricing-server.mjs`, not directly from this React app.
+Use the Lowe's API from `server.js`, not directly from this React app.
 
 Server-side environment values:
 

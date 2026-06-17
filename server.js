@@ -79,6 +79,60 @@ function loadEnvFile(fileName) {
 loadEnvFile(".env");
 loadEnvFile(".env.local");
 
+const distRoot = resolve("dist");
+
+function getContentType(filePath) {
+  if (filePath.endsWith(".js")) return "application/javascript";
+  if (filePath.endsWith(".css")) return "text/css";
+  if (filePath.endsWith(".html")) return "text/html; charset=utf-8";
+  if (filePath.endsWith(".json")) return "application/json";
+  if (filePath.endsWith(".svg")) return "image/svg+xml";
+  if (filePath.endsWith(".png")) return "image/png";
+  if (filePath.endsWith(".jpg") || filePath.endsWith(".jpeg")) return "image/jpeg";
+  if (filePath.endsWith(".ico")) return "image/x-icon";
+  if (filePath.endsWith(".txt")) return "text/plain";
+  return "application/octet-stream";
+}
+
+function resolveStaticPath(pathname) {
+  const safePath = resolve(distRoot, "." + pathname);
+
+  if (!safePath.startsWith(distRoot + "/") && safePath !== distRoot) {
+    return null;
+  }
+
+  return safePath;
+}
+
+function serveStaticAsset(request, response) {
+  const url = new URL(request.url, "http://localhost");
+  let pathname = url.pathname;
+
+  if (pathname === "/") {
+    pathname = "/index.html";
+  }
+
+  let filePath = resolveStaticPath(pathname);
+
+  if (!filePath || !existsSync(filePath)) {
+    if (pathname.includes(".") && pathname !== "/") {
+      return false;
+    }
+
+    filePath = resolve(distRoot, "index.html");
+  }
+
+  if (!existsSync(filePath)) {
+    return false;
+  }
+
+  response.writeHead(200, {
+    "Content-Type": getContentType(filePath),
+  });
+  response.end(readFileSync(filePath));
+  return true;
+}
+
 const port = Number(process.env.LUMBER_PRICING_PORT ?? process.env.PORT ?? 8787);
 const host = process.env.LUMBER_PRICING_HOST ?? "127.0.0.1";
 const pricingProvider = process.env.LUMBER_PRICING_PROVIDER ?? "unwrangle";
@@ -531,6 +585,15 @@ const server = createServer(async (request, response) => {
 
   if (request.method === "GET" && request.url === "/health") {
     sendJson(response, 200, { ok: true }, origin);
+    return;
+  }
+
+  if (request.method === "GET") {
+    if (serveStaticAsset(request, response)) {
+      return;
+    }
+
+    sendJson(response, 404, { error: "Not found" }, origin);
     return;
   }
 

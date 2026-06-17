@@ -1,0 +1,10 @@
+# Ignore build and local files for Railway deployments
+node_modules
+dist
+dist-ssr
+*.local
+*.log
+.DS_Store
+.vscode
+.idea
+.git
