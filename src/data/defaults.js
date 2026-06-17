@@ -17,7 +17,7 @@ export const DEFAULT_QUOTE_INPUTS = {
   catioBoardFeetPerSquareFoot: 4,
   catioNonLumberCostPerSquareFoot: 45,
   profitMarkupPercent: 0.38,
-  selectedUpgradeIds: ["catio-trex-decking"],
+  selectedUpgradeIds: [],
 };
 
 export const FIXED_JOB_COSTS = [
@@ -67,7 +67,7 @@ export const PROJECT_COMPLEXITY_OPTIONS = [
   },
   {
     id: "custom",
-    label: "Custom",
+    label: "Custom+",
     multiplier: 1.5,
   },
 ];
