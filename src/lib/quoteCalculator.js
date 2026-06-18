@@ -120,7 +120,7 @@ const getCatioLumberUpgradePrice = (upgradeId, materialPricing, boardFeet, squar
   }
 
   if (upgradeId === "catio-trex-decking") {
-    const trexPricePerSquareFoot = 45;
+    const trexPricePerSquareFoot = 50;
     return squareFeet * trexPricePerSquareFoot;
   }
 
