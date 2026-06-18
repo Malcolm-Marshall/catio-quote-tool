@@ -8,7 +8,7 @@ const PRICE_FIELDS = {
 
 const BASE_LUMBER_PRICES = {
   pressureTreated: 1.15,
-  cedar: 3.5,
+  cedar: 4.5,
   redwood: 5.25,
 };
 

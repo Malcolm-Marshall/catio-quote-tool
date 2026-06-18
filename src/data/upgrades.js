@@ -52,7 +52,7 @@ export const CATIO_UPGRADES = [
   {
     id: "catio-trex-decking",
     name: "Trex Decking",
-    price: 2800,
+    price: 5000,
   },
   {
     id: "catio-built-in-couch",

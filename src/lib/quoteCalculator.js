@@ -102,7 +102,7 @@ const getLumberPricing = (quoteInputs, selectedMaterialId = "pressure-treated") 
   };
 };
 
-const getCatioLumberUpgradePrice = (upgradeId, materialPricing, boardFeet) => {
+const getCatioLumberUpgradePrice = (upgradeId, materialPricing, boardFeet, squareFeet) => {
   if (upgradeId === "catio-cedar-lumber") {
     return Math.max(
       materialPricing.adjustedCedarLumberPricePerBoardFoot -
@@ -119,15 +119,21 @@ const getCatioLumberUpgradePrice = (upgradeId, materialPricing, boardFeet) => {
     ) * boardFeet;
   }
 
+  if (upgradeId === "catio-trex-decking") {
+    const trexPricePerSquareFoot = 45;
+    return squareFeet * trexPricePerSquareFoot;
+  }
+
   return null;
 };
 
-const getPricedCatioUpgrades = (upgrades, materialPricing, boardFeet) =>
+const getPricedCatioUpgrades = (upgrades, materialPricing, boardFeet, squareFeet) =>
   upgrades.map((upgrade) => {
     const dynamicPrice = getCatioLumberUpgradePrice(
       upgrade.id,
       materialPricing,
       boardFeet,
+      squareFeet,
     );
 
     if (dynamicPrice == null) {
@@ -180,6 +186,7 @@ export function calculateQuote(inputs = {}) {
     CATIO_UPGRADES,
     materialPricing,
     catioBoardFeet + catioDeckBaseBoardFeet,
+    squareFeet,
   );
   const selectedUpgrades = getSelectedItems(
     availableUpgrades,
